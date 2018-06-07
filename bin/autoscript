@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SCR_FOLDER="$HOME/bin"
+SCR="$SCR_FOLDER/$1"
+
+if [[ -f $SCR ]]; then
+  echo file already exists
+else
+  echo '#!/bin/bash' > $SCR
+  chmod +x $SCR
+  echo script $1 created in $SCR_FOLDER
+fi

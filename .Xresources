@@ -86,10 +86,10 @@ URxvt.iso14755_52: false
 !key bindings
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-!URxvt.keysym.C-f: perl:fullscreen:switch
+URxvt.keysym.C-f: perl:fullscreen:switch
 
 
 !extensions
 !URxvt.perl-ext-common: fullscreen
-URxvt.perl-ext-common: resize-font
+URxvt.perl-ext-common: fullscreen, resize-font
 

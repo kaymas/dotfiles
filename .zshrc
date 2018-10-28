@@ -1,8 +1,16 @@
 # If you come from bash you might have to change your $PATH.
- export PATH=$HOME/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/bin:$PATH
+ export PATH=$HOME/bin:/usr/local/bin:/usr/local/go/bin:/sbin:/usr/sbin:/usr/bin:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH=/home/chrx/.oh-my-zsh
+
+# Go path 
+export GOPATH=$HOME/gocode
+export PATH=$PATH:$GOPATH/bin
+
+# added by Anaconda3 installer
+export PATH="/home/chrx/anaconda3/bin:$PATH"
+
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -64,6 +72,12 @@ plugins=(
 
 # ALIAS
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias ac="/usr/bin/vim $HOME/private/accounts"
+alias acp="$HOME/bin/drive_linux push $HOME/private/accounts"
+
+#python
+alias python=python3
+alias pip=pip3
 
 source ~/.profile
 source $ZSH/oh-my-zsh.sh
@@ -103,3 +117,5 @@ export NVM_DIR="$HOME/.nvm"
 
 # run on start
 lolban 'kaymas'
+export EDITOR=/usr/local/bin/vim
+export VISUAL=/usr/local/bin/vim

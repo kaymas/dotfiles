@@ -53,10 +53,12 @@
 *color20:      base04
 *color21:      base06
 
+!extension dir
+URxvt.perl-lib: /usr/lib/urxvt/perl
 
 !interface
-urxvt*scrollBar: false
-urxvt*transparent: false
+URxvt*scrollBar: false
+URxvt*transparent: false
 URxvt.borderless: true
 URxvt.geometry: 80x20
 
@@ -75,7 +77,6 @@ URxvt.letterSpace: -1
 URxvt.font:         xft:Hack-Regular:pixelsize=16,xft:Symbola
 URxvt.boldFont:     xft:Hack-Bold:pixelsize=14:weight=bold,xft:Symbola
 URxvt.italicFont:   xft:Hack-RegularOblique:pixelsize=14:slant=italic,xft:Symbola
-!URxvt.font: xft:monospace:size=12
 
 
 !Disable this iso mode
@@ -91,5 +92,8 @@ URxvt.keysym.C-f: perl:fullscreen:switch
 
 !extensions
 !URxvt.perl-ext-common: fullscreen
-URxvt.perl-ext-common: fullscreen, resize-font
+URxvt.perl-ext-common: default,fullscreen,resize-font
 
+!! resize-font
+URxvt.resize-font.smaller: C-j
+URxvt.resize-font.bigger: C-k

@@ -28,6 +28,17 @@ noremap <LEADER>P "*p
 noremap <LEADER>y "+y  
 noremap <LEADER>p "+p 
 
+" python execution shortcut
+vnoremap <silent> <LEADER>[ :w ! python3<CR>
+nnoremap <silent> <LEADER>[ :w ! python3<CR>
+
+" disable arrow keys
+
+nnoremap <Left> <Nop>
+nnoremap <Right> <Nop>
+nnoremap <Up> <Nop>
+nnoremap <Down> <Nop>
+
 """"""" latex bindings
 
 "" Make sure to be in the directory as the file!!

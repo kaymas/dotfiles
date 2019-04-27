@@ -1,0 +1,5 @@
+#!/bin/bash
+artist=`deadbeef --nowplaying %a`
+title=`deadbeef --nowplaying %t`
+song=`curl -s --get "https://makeitpersonal.co/lyrics" --data-urlencode "artist=$artist" --data-urlencode "title=$title"`
+echo -e "$song" | less -FX

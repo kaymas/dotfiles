@@ -66,3 +66,6 @@ URxvt.resize-font.bigger: C-k
 
 !! Fullscreen
 URxvt.keysym.C-f: perl:fullscreen:switch
+
+!! ROFI
+

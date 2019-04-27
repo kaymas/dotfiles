@@ -3,6 +3,8 @@
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/go/bin:/sbin:/usr/sbin:/usr/bin:$HOME/.local/bin:$PATH
 
 
+export TERM=xterm-256color 
+
 # Path to your oh-my-zsh installation.
 export ZSH="/home/chrx/.oh-my-zsh"
 
@@ -105,3 +107,21 @@ source $ZSH/oh-my-zsh.sh
 
 #aliases
 alias cmathpix="xsel -b | sed 's/ //g' | xsel -b"
+alias python3='/usr/local/bin/python3.7'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+. ~/anaconda3/etc/profile.d/conda.sh
+
+# snap path
+export PATH="$PATH:/snap/bin"
+
+# npm global
+export PATH="$PATH:$HOME/npm-global/bin"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# brew
+export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
